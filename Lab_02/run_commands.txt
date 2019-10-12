@@ -1,0 +1,11 @@
+zadanie_2:filter((fun(X)->if X>3 -> true; true -> false end end), [1,2,3,4,5]).
+zadanie_2:map((fun(X)->X+1 end), [1,2,3]).
+
+lists:partition((fun(X)->if X<3->true; true->false end end),[1,2,3,4,5,6]).
+lists:dropwhile((fun(X)->if X<3->true; true->false end end),[1,2,3,4,5,6]).
+lists:any((fun(X)->if X==1->true; true->false end end),[2]).
+lists:any((fun(X)->if X==1->true; true->false end end),[1,1,2]).
+lists:all((fun(X)->if X==1->true; true->false end end),[1,1,1]).
+
+
+cd("E:/Repos/erlang/Erlang/Lab_02").
